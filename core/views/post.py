@@ -47,7 +47,7 @@ class PostView(GenericAPIView):
     def delete(self, request, post_id):
         if not Post.objects.get(id=post_id).user:
             raise Exception("Can not delete post")
-        Post.objects.delete(id=post_id)
+        Post.objects.filter(id=post_id).delete()
         return Response(status=status.HTTP_200_OK)
 
 
@@ -73,8 +73,9 @@ class ContentView(GenericAPIView):
         return Response(ContentSerializer(content.post).data, status=status.HTTP_200_OK)
 
     def delete(self, request, content_id):
-        if not Content.objects.filter(id=content_id).post.user:
-            raise Exception("Can not delete post")
-        Content.objects.delete(id=content_id)
+        content = Content.objects.get(id=content_id)
+        if content.post and not content.post.user:
+            raise Exception("Can not delete content")
+        Content.objects.filter(id=content_id).delete()
         return Response(status=status.HTTP_200_OK)
 
