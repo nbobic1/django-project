@@ -1,0 +1,31 @@
+version: '3.8'
+
+volumes:
+  local_postgres_data: { }
+  local_postgres_data_backups: { }
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./compose/local/Dockerfile
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app
+    env_file:
+      - ./envs/.local/
+      - ./envs/.postgres
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    command: /docker-entrypoint
+    networks:
+      - default
+
+  postgres:
+    image: postgres:13
+    ports:
+      - "54325:5432"
+    env_file:
+      - envs/.postgres
