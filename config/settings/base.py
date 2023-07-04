@@ -22,7 +22,7 @@ SECRET_KEY = "django-insecure-!rpxk1f6ru8%qxu*-7p0^b16x%t!v1^0^se3i^#vhs&(z!(#kg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -34,8 +34,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "corsheaders",
     "storages",
-    "django_cleanup.apps.CleanupConfig"
+    "django_cleanup.apps.CleanupConfig",
+    "rest_framework_simplejwt.token_blacklist"
 ]
 
 LOCAL_APPS = [
@@ -56,16 +58,18 @@ SIMPLE_JWT = {
 }
 
 MIDDLEWARE = [
+    "django.middleware.common.CommonMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware"
 ]
 
 ROOT_URLCONF = "config.urls"
+CORS_ALLOW_ALL_ORIGINS = True
 
 MIGRATION_MODULES = {
     "core": "core.migrations"

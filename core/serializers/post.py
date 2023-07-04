@@ -15,7 +15,7 @@ class CreateContentSerializer(serializers.ModelSerializer):
 class ContentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Content
-        fields = ['id', 'url', 'type', 'name', 'text']
+        fields = ['id', 'url', 'type', 'name', 'text', 'style']
 
 
 class PostCreateSerializer(serializers.ModelSerializer):

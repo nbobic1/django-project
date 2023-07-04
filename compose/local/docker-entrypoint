@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -o errexit
+set -o nounset
+
 # Apply database migrations
 echo "Apply database migrations"
 python manage.py migrate

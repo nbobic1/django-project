@@ -9,11 +9,13 @@ class RegistrationSerializer(serializers.ModelSerializer):
     confirm_password = serializers.CharField(write_only=True)
 
     def validate(self, data):
+        print('validate', data)
         if data['password'] != data['confirm_password']:
-            raise serializers.ValidationError({"Passwords dont match!"}, code='passwords_dont_match')
+            raise serializers.ValidationError("Passwords do not match!", code='passwords_dont_match')
         return data
 
     def create(self, validated_data):
+        print('omggggg', validated_data)
         user = User.objects.create(email=validated_data.get('email'), bio=validated_data.get('bio'))
         user.set_password(validated_data['password'])
         user.save()

@@ -14,7 +14,7 @@ class Post(models.Model):
 
 
 class Content(models.Model):
-    url = models.FileField(upload_to='content')
+    url = models.FileField(upload_to='content', blank=True, null=True)
     name = models.CharField(max_length=255, blank=True, null=True)
     text = models.TextField(blank=True, null=True)
     style = models.TextField(blank=True, null=True)
