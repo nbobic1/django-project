@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "diplomski-383408",
+  "private_key_id": "4e3632d3176d147c652de221d49b65b6ddfc363f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXRHL4dNpwGNiW\nc8kCmBD6oFVMrCULlC0P6+dnez34IU0sfag4kN0B9Vj38i5seLGDa7mj6X4nTffq\n32VWQC/77KVDKyUuF/2CxGDD39+fUiQq+n5fj8ziv4VgQ+D+I01Nhc7dR+ZJgnkA\nPylrKM4wbKxYpVrTaCvsP2jBqM9NApFU22Lcr0rX7OT6SBLzkN38RVonWscAMmoX\nTFNnd02sYhV5nYnA5aho77cIQBHeQ3WNoB7EC5RU5GkEYXl8jBdP8ViQvrxzW43I\nR/95ZoRUUdcTetFpo7FMHLcwLFmnVfxQJj+YGoNFRJIwzdsEf77lWDyTlP47GCUw\n8UuPKkjdAgMBAAECggEAGpn4JdaK3SoKLyLFHETzvtpBWuWK+RCpNjvOBMOot25Q\nvca+xalhJkojYcB+bCPItpeBVqLBVtS+ZjqPqJuV/RO+oxDvL0WtAOkzlqumVBHa\ngP/OI2ZUc1DSMpXbdTb3k9+NM1scjMj1cEpd2+2BorT14fPNHYLUqq/LSjiKJYHe\n07UrnAVURqomVfgzfbkHLA1g7WALDMDLEBMjh1vYGj3rtydAyBWYARb91QNXeTd4\nf3gWmCzeHD/gQZIUjDX2GtNDjxC3cHsbMDFAHk5+hNGzfQy9moNvf7uhNHB8ySS6\nyW8fH3e+U6Ctikx8dqnlxWrJ/wEU4vEnYa8X4g80IQKBgQD/l+YeciFTB7u2VUG9\nEAC/7vhIIqS2w9MZiQ3YcrL/fkjdfdKpwnsweeGdzRg9EA1uitEHhTWqlww/TNRO\nr4IQu/zSAwEJQkKix6aEcPjWURNjd/9G2XrNuFUMLzdwmLIWta66WxjpRtxyFWX7\nKq71SdV/ewZ1tdPvUNxZ8hE1cwKBgQDXnCAxv+oXdzpL5AnUZSXr0ibP7evUUeoR\nZGgtEva65Smi4E2d2B0VhTbDH/nVa4lW9HXijbWZNK2JWDnGoTYfVd8qg/8TKhrT\nNi+BdAf0ClFS20kiULzt7fWppyFg9KE+bDauVXy9dYuTfs7rov3/UwAaGXiUBqKL\nw+RBvZR0bwKBgQDF06ccJ5AdeN3USXbhQ9Kgu/DVvGKqxzTMDeV2g4iB8hepv6pf\nFJVOtvdmsQiysosC5VTWskcQa2riT6//2x4bn7UWQ5b4uJ1k6oy688nV79jG42jl\nSI0hTywciyso7jbhFuxPdxT38Y3Miz1swuO6HNSvn+QnFX4dPAPhZlflewKBgDo1\nRyfHNQ6ivJVSeijiKcuxj5LhG6LVfoi1f75zeTLZvVTgk3PCrY9qyG8DSfKJNqnI\nE69XLKiw5QzIScjLKw5oo3gZ7Joi6t0MquSbC66hvnTNCMB/5ZGihYkIuuUvBf0R\nP+3u3F9VxZnLSVeqSEJPCR8Cs1/bLrTm7M+mu9Z3AoGBAOwjmGlEYCJwmyhPQBvi\nfn6fZMcal4tE3hOf0Kk6feloRmTRDoxGCoWGyUYxlQW7R0y1DKvteYiI7bhrIbJI\nW5btqRS4j4BGuq3bBhW2XPzUo+iRgwMo4FXd7frtoc3ht3omqFCoxQOXfPjxe2/h\nHymGgy4m5Ciid3mDPJJ9TwG0\n-----END PRIVATE KEY-----\n",
+  "client_email": "diplomski@diplomski-383408.iam.gserviceaccount.com",
+  "client_id": "102330035152864075396",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/diplomski%40diplomski-383408.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
