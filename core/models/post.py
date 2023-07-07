@@ -16,7 +16,10 @@ class Post(models.Model):
 class Content(models.Model):
     url = models.FileField(upload_to='content', blank=True, null=True)
     name = models.CharField(max_length=255, blank=True, null=True)
+    answer = models.TextField(blank=True, null=True)
+    question = models.TextField(blank=True, null=True)
     text = models.TextField(blank=True, null=True)
     style = models.TextField(blank=True, null=True)
+    index = models.IntegerField()
     type = models.IntegerField()
     post = models.ForeignKey(to=Post, on_delete=models.CASCADE, null=True, blank=True, related_name='content')

@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "storages",
     "django_cleanup.apps.CleanupConfig",
-    "rest_framework_simplejwt.token_blacklist"
+    "rest_framework_simplejwt.token_blacklist",
+    "drf_yasg",
 ]
 
 LOCAL_APPS = [
@@ -142,12 +143,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # GCS config
 DEFAULT_FILE_STORAGE = 'config.settings.base.Media'
 
-GS_BUCKET_NAME = 'django_bucket_test'
+GS_BUCKET_NAME = 'diplomski_django'
 
 GS_FILE_OVERWRITE = True
 
 GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
-    os.path.join(ROOT_DIR, 'envs/gcp_cred_f58a9e.json'),
+    os.path.join(ROOT_DIR, 'envs/diplomski-383408-4e3632d3176d.json'),
 )
 
 Media = lambda: GoogleCloudStorage(location='media')
