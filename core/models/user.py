@@ -46,4 +46,3 @@ class User(auth_models.AbstractBaseUser):
 
     def has_module_perms(self):
         return self.is_staff
-

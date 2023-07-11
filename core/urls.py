@@ -3,7 +3,7 @@ from django.urls import re_path
 from core.views.auth import RegistrationView, UserView, LogoutView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from core.views.post import ContentView, PostsListView, PostView
+from core.views.post import ContentView, PostsListView, PostView, PostProviderView
 from core.views.users import UsersListView
 
 app_name = "core"
@@ -17,6 +17,7 @@ urlpatterns = [
     re_path(r"^register/?$", RegistrationView.as_view(), name="registration"),
     re_path(r"^posts/?$", PostsListView.as_view(), name='posts'),
     re_path(r"^users/?$", UsersListView.as_view(), name='users'),
+    re_path(r"^providers/?$", PostProviderView.as_view(), name='provider_id'),
     re_path(r"^post(/(?P<post_id>\d+))?/?$", PostView.as_view(), name='post'),
     re_path(r"^content(/(?P<content_id>\d+))?/?$", ContentView.as_view(), name='content'),
 ]

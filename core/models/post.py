@@ -12,6 +12,9 @@ class Post(models.Model):
     published = models.BooleanField(default=False)
     user = models.ForeignKey(to=User, on_delete=models.CASCADE, null=True, blank=True, related_name='posts')
 
+class PostProvider(models.Model):
+     reciever = models.ForeignKey(to=User, on_delete=models.CASCADE, null=True, blank=True, related_name='recievers')
+     provider = models.ForeignKey(to=User, on_delete=models.CASCADE, null=True, blank=True, related_name='providers')
 
 class Content(models.Model):
     url = models.FileField(upload_to='content', blank=True, null=True)
